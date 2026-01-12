@@ -1,10 +1,29 @@
 header {
   background-color: aliceblue;
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
 
 header h1 {
   color: #333;
   font-size: 2rem;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    margin: 15px 15px;
+}
+
+nav li {
+    list-style: none;
+    border: #0080fe 2px solid;
+    display: inline;
+    margin: auto 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #57a0d2;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
 }
