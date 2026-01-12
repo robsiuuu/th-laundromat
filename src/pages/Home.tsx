@@ -3,7 +3,7 @@ import "./../styles/Home.css";
 function Home() {
   return (
     <div className="container">
-      
+
       <h1>Welcome to T&H Laundromat</h1>
       <p>Large Washers: 22 Quarters = $5.50</p>
       <p>Medium Washers: 18 Quarters = $4.50</p>
@@ -11,7 +11,7 @@ function Home() {
       
       <div className="small-container">
         <div className="img-container">
-          <img src="/src/assets/thlaundromat.png" alt="Laundromat" />
+          <img src="/thlaundromat.png" alt="Laundromat" />
         </div>
         <h2>Hours:</h2>
         <p>Monday - Sunday: 7:00 AM - 8:00 PM</p>
