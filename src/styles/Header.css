@@ -1,29 +1,123 @@
-header {
-  background-color: aliceblue;
+/* Header.css - Simple & Responsive */
+
+/* Header Base */
+.header {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+/* Container */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Logo */
+.logo {
+  text-align: center;
+}
+
+.logo h1 {
+  color: #2c7be5;
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.tagline {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0.2rem 0 0 0;
+  font-weight: 500;
+}
+
+/* Navigation */
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-header h1 {
+.nav-link {
+  text-decoration: none;
   color: #333;
-  font-size: 2rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+  display: block;
 }
 
-nav {
-    position: absolute;
-    right: 0;
-    margin: 15px 15px;
+.nav-link:hover {
+  color: #2c7be5;
 }
 
-nav li {
-    list-style: none;
-    border: #0080fe 2px solid;
-    display: inline;
-    margin: auto 10px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #57a0d2;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
+/* Contact Info */
+.contact-info {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  align-items: center;
+}
+
+.phone, .hours {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .logo {
+    text-align: left;
+    flex-shrink: 0;
+  }
+  
+  .logo h1 {
+    font-size: 2rem;
+  }
+  
+  .nav-list {
+    gap: 2rem;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    gap: 0.3rem;
+    text-align: right;
+    flex-shrink: 0;
+  }
+}
+
+/* Mobile Optimized */
+@media (max-width: 480px) {
+  .nav-list {
+    gap: 1rem;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
 }
