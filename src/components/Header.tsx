@@ -8,7 +8,7 @@ function Header() {
         {/* Logo */}
         <div className="logo">
           <h1>T&H Laundromat</h1>
-          <p className="tagline">Family Owned Since 1995</p>
+          <p className="tagline">Family Owned Since 2016</p>
         </div>
 
         {/* Navigation */}

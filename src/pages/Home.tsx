@@ -7,7 +7,7 @@ function Home() {
       <header className="hero-banner">
         <div className="hero-content">
           <h1 className="hero-title">Welcome to T&H Laundromat</h1>
-          <p className="hero-subtitle">Family Owned & Operated Since 1995</p>
+          <p className="hero-subtitle">Family Owned & Operated Since 2016</p>
           <p className="hero-highlight">FREE Dry with Wash!</p>
         </div>
       </header>
